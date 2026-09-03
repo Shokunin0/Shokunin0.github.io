@@ -3,36 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Mwangi-de | AI & ML Engineer</title>
-
-    <meta name="description"
-          content="Mwangi-de is an AI and machine learning focused software and systems developer building practical technology solutions.">
-
+    <meta name="description" content="Mwangi-de provides remote technology services including AI and machine learning development, Python programming, data analysis, software development and automation.">
+    <meta name="robots" content="index, follow">
+    <title>Mwangi-de | AI, ML & Software Services</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: Arial, Helvetica, sans-serif; background: #0f172a; color: #e2e8f0; line-height: 1.6; }
-        nav { display: flex; justify-content: space-between; align-items: center; padding: 22px 8%; border-bottom: 1px solid #1e293b; }
-        nav .logo { font-size: 22px; font-weight: bold; color: white; }
-        nav a { color: #94a3b8; text-decoration: none; margin-left: 25px; }
+        html { scroll-behavior: smooth; }
+        body { font-family: Arial, Helvetica, sans-serif; background: #0b1120; color: #dbe4f0; line-height: 1.7; }
+        a { color: inherit; }
+        nav { position: sticky; top: 0; z-index: 10; display: flex; justify-content: space-between; align-items: center; padding: 18px 8%; background: rgba(11,17,32,.94); backdrop-filter: blur(10px); border-bottom: 1px solid #1e293b; }
+        nav .logo { font-size: 22px; font-weight: 800; color: white; }
+        nav a { color: #94a3b8; text-decoration: none; margin-left: 22px; font-size: 14px; }
         nav a:hover { color: white; }
-        .hero { max-width: 1000px; margin: auto; padding: 110px 8% 90px; }
-        .hero p.label { color: #60a5fa; font-weight: bold; margin-bottom: 15px; }
-        h1 { font-size: clamp(42px, 7vw, 72px); line-height: 1.05; color: white; margin-bottom: 25px; }
-        .hero .intro { max-width: 700px; font-size: 20px; color: #94a3b8; }
+        .hero { max-width: 1050px; margin: auto; padding: 105px 8% 90px; }
+        .label { color: #60a5fa; font-weight: 800; letter-spacing: 1.5px; font-size: 13px; margin-bottom: 18px; }
+        h1 { font-size: clamp(42px, 7vw, 76px); line-height: 1.03; color: white; margin-bottom: 25px; max-width: 900px; }
+        .hero .intro { max-width: 760px; font-size: 20px; color: #9aa9bd; }
         .buttons { margin-top: 35px; }
-        .button { display: inline-block; padding: 13px 22px; margin-right: 12px; border-radius: 8px; text-decoration: none; font-weight: bold; }
+        .button { display: inline-block; padding: 13px 22px; margin-right: 10px; border-radius: 8px; text-decoration: none; font-weight: 700; }
         .primary { background: #2563eb; color: white; }
         .secondary { border: 1px solid #334155; color: white; }
-        section { max-width: 1000px; margin: auto; padding: 70px 8%; }
-        h2 { color: white; font-size: 32px; margin-bottom: 25px; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 20px; }
-        .card { background: #111c32; border: 1px solid #1e293b; border-radius: 12px; padding: 25px; }
-        .card h3 { color: white; margin-bottom: 10px; }
-        .card p { color: #94a3b8; }
-        .skills { display: flex; flex-wrap: wrap; gap: 10px; }
-        .skill { padding: 9px 14px; background: #1e293b; border-radius: 20px; color: #cbd5e1; }
-        footer { text-align: center; padding: 40px 8%; border-top: 1px solid #1e293b; color: #64748b; }
+        .primary:hover { background: #1d4ed8; }
+        .secondary:hover { border-color: #64748b; }
+        section { max-width: 1050px; margin: auto; padding: 75px 8%; }
+        .eyebrow { color: #60a5fa; font-size: 12px; font-weight: 800; letter-spacing: 1.4px; margin-bottom: 8px; }
+        h2 { color: white; font-size: 34px; margin-bottom: 22px; }
+        .section-text { max-width: 780px; color: #9aa9bd; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; margin-top: 28px; }
+        .card { background: #101a2e; border: 1px solid #1e293b; border-radius: 14px; padding: 27px; }
+        .card h3 { color: white; margin-bottom: 10px; font-size: 20px; }
+        .card p { color: #9aa9bd; }
+        .service-number { color: #60a5fa; font-size: 13px; font-weight: 800; margin-bottom: 12px; }
+        .skills { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 25px; }
+        .skill { padding: 8px 13px; background: #172238; border: 1px solid #26344c; border-radius: 20px; color: #cbd5e1; font-size: 14px; }
+        .work-box { background: #101a2e; border: 1px solid #1e293b; border-radius: 14px; padding: 30px; }
+        .contact-links { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 25px; }
+        .contact-link { padding: 11px 17px; border: 1px solid #334155; border-radius: 8px; text-decoration: none; color: white; }
+        footer { text-align: center; padding: 40px 8%; border-top: 1px solid #1e293b; color: #64748b; font-size: 14px; }
+        @media (max-width: 650px) { nav { padding: 16px 6%; } nav div:last-child a { margin-left: 10px; } .hero { padding: 80px 6% 65px; } section { padding: 60px 6%; } }
     </style>
 </head>
 <body>
@@ -40,9 +48,10 @@
 <nav>
     <div class="logo">Mwangi-de</div>
     <div>
-        <a href="#about">About</a>
+        <a href="#services">Services</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
     </div>
 </nav>
 
@@ -50,71 +59,70 @@
     <p class="label">AI • MACHINE LEARNING • SOFTWARE • SYSTEMS</p>
     <h1>Building practical technology for real-world problems.</h1>
     <p class="intro">
-        I am a technology developer focused on artificial intelligence,
-        machine learning, software development and intelligent systems.
-        I enjoy turning problems into practical, data-driven solutions.
+        I provide remote technology services focused on artificial intelligence,
+        machine learning, Python, software development, data analysis and automation.
+        I turn technical problems into practical, reliable solutions.
     </p>
     <div class="buttons">
-        <a class="button primary" href="https://github.com/Mwangi-de" target="_blank">View GitHub</a>
-        <a class="button secondary" href="https://www.linkedin.com/in/priscilla-wambui-668b14288" target="_blank">LinkedIn</a>
+        <a class="button primary" href="#contact">Work With Me</a>
+        <a class="button secondary" href="https://github.com/Mwangi-de" target="_blank" rel="noopener">View GitHub</a>
+        <a class="button secondary" href="https://www.linkedin.com/in/priscilla-wambui-668b14288" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+</section>
+
+<section id="services">
+    <p class="eyebrow">WHAT I DO</p>
+    <h2>Professional Technology Services</h2>
+    <p class="section-text">Remote technical support for individuals, startups and small businesses that need practical software, data and intelligent technology solutions.</p>
+    <div class="grid">
+        <div class="card"><div class="service-number">01</div><h3>AI & Machine Learning</h3><p>Machine learning projects, model development, experimentation, evaluation and AI-powered solutions using Python and data.</p></div>
+        <div class="card"><div class="service-number">02</div><h3>Python Development</h3><p>Python scripting, automation, data processing and backend-oriented development for practical technical problems.</p></div>
+        <div class="card"><div class="service-number">03</div><h3>Data Analysis</h3><p>Data cleaning, exploration, analysis and visualization to turn raw information into useful insights.</p></div>
+        <div class="card"><div class="service-number">04</div><h3>Software & Automation</h3><p>Small software tools and workflow automation designed to reduce repetitive work and improve business processes.</p></div>
+        <div class="card"><div class="service-number">05</div><h3>Intelligent Systems</h3><p>Technical solutions combining software, sensors, embedded systems and data-driven decision making.</p></div>
+        <div class="card"><div class="service-number">06</div><h3>Technical Problem Solving</h3><p>Research, debugging, prototyping and implementation support for technology-related projects.</p></div>
     </div>
 </section>
 
 <section id="about">
-    <h2>About</h2>
-    <p>
-        My work combines software development, artificial intelligence,
-        machine learning and systems thinking. I am particularly interested
-        in building technology that can automate processes, work with data
-        and help people make better decisions.
+    <p class="eyebrow">ABOUT</p>
+    <h2>Technology with a systems mindset.</h2>
+    <p class="section-text">
+        My work combines software development, artificial intelligence, machine learning and systems engineering. I am especially interested in technology that automates processes, works with data and helps people make better decisions.
     </p>
-    <p style="margin-top: 18px;">
-        I am open to remote opportunities involving AI/ML, software
-        development, data and technical problem solving.
+    <p class="section-text" style="margin-top:18px;">
+        I work remotely and can collaborate with clients and teams across different locations. Projects are discussed and scoped according to the client's requirements before implementation begins.
     </p>
 </section>
 
 <section id="projects">
+    <p class="eyebrow">SELECTED WORK</p>
     <h2>Projects</h2>
     <div class="grid">
-        <div class="card">
-            <h3>StockFlow</h3>
-            <p>An inventory management and demand forecasting system designed to help small businesses track stock, analyze sales and make data-driven restocking decisions.</p>
-        </div>
-        <div class="card">
-            <h3>Autonomous Fire Extinguisher</h3>
-            <p>An autonomous embedded system designed to detect and respond to fire using sensors, microcontrollers and motorized mechanisms.</p>
-        </div>
-        <div class="card">
-            <h3>AI & Machine Learning</h3>
-            <p>Practical experiments and projects involving Python, machine learning, data analysis and intelligent systems.</p>
-        </div>
+        <div class="card"><h3>StockFlow</h3><p>Inventory management and demand forecasting for small businesses, combining sales tracking, historical analysis and machine learning to support restocking decisions.</p></div>
+        <div class="card"><h3>Autonomous Fire Extinguisher</h3><p>An autonomous embedded system designed to detect and respond to fire using sensors, a Raspberry Pi-based controller and motorized mechanisms.</p></div>
+        <div class="card"><h3>AI & Machine Learning Projects</h3><p>Practical experiments involving Python, machine learning, data analysis, intelligent systems and evaluation of AI solutions.</p></div>
     </div>
 </section>
 
 <section id="skills">
-    <h2>Technical Skills</h2>
+    <p class="eyebrow">TECHNICAL STACK</p>
+    <h2>Skills</h2>
     <div class="skills">
-        <span class="skill">Python</span>
-        <span class="skill">Machine Learning</span>
-        <span class="skill">Artificial Intelligence</span>
-        <span class="skill">Data Analysis</span>
-        <span class="skill">Software Development</span>
-        <span class="skill">Git & GitHub</span>
-        <span class="skill">IoT</span>
-        <span class="skill">Embedded Systems</span>
-        <span class="skill">Microcontrollers</span>
-        <span class="skill">Systems Engineering</span>
+        <span class="skill">Python</span><span class="skill">Machine Learning</span><span class="skill">Artificial Intelligence</span><span class="skill">Data Analysis</span><span class="skill">Software Development</span><span class="skill">Git & GitHub</span><span class="skill">IoT</span><span class="skill">Embedded Systems</span><span class="skill">Microcontrollers</span><span class="skill">Systems Engineering</span>
     </div>
 </section>
 
-<section>
-    <h2>Remote Work</h2>
-    <p>
-        Available for remote technical opportunities, freelance projects
-        and collaborative work involving AI/ML, software development,
-        data and intelligent systems.
-    </p>
+<section id="contact">
+    <p class="eyebrow">CONTACT</p>
+    <h2>Let's work on a technical problem.</h2>
+    <div class="work-box">
+        <p class="section-text">For remote projects, freelance work or technical collaboration, connect with me through GitHub or LinkedIn. Project scope, requirements, timelines and commercial terms can be discussed before work begins.</p>
+        <div class="contact-links">
+            <a class="contact-link" href="https://github.com/Mwangi-de" target="_blank" rel="noopener">GitHub</a>
+            <a class="contact-link" href="https://www.linkedin.com/in/priscilla-wambui-668b14288" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+    </div>
 </section>
 
 <footer>© 2026 Mwangi-de. Built with GitHub Pages.</footer>
